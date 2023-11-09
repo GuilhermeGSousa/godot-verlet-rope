@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://docextxfip44j"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Rope2D" type="Rope2D" parent="." node_paths=PackedStringArray("line_renderer")]
+line_renderer = NodePath("Line2D")
+
+[node name="Line2D" type="Line2D" parent="Rope2D"]
+points = PackedVector2Array(0, 0, 65, -63, 165, -74, 273, -50, 363, -6)

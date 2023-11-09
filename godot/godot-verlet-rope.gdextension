@@ -1,0 +1,13 @@
+[configuration]
+entry_symbol = "gdext_rust_init"
+compatibility_minimum = 4.1
+
+[libraries]
+linux.debug.x86_64 = "res://../target/debug/libgodot_verlet_rope.so"
+linux.release.x86_64 = "res://../target/release/libgodot_verlet_rope.so"
+windows.debug.x86_64 = "res://../target/debug/godot_verlet_rope.dll"
+windows.release.x86_64 = "res://../target/release/godot_verlet_rope.dll"
+macos.debug = "res://../target/debug/libgodot_verlet_rope.dylib"
+macos.release = "res://../target/release/libgodot_verlet_rope.dylib"
+macos.debug.arm64 = "res://../target/debug/libgodot_verlet_rope.dylib"
+macos.release.arm64 = "res://../target/release/libgodot_verlet_rope.dylib"
