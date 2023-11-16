@@ -1,5 +1,8 @@
+.vscode/
+
 # Godot 4+ specific ignores
 .godot/
 
+# Rust ignores
 /target
 /Cargo.lock
