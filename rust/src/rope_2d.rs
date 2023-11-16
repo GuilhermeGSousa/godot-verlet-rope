@@ -2,15 +2,15 @@ use crate::constraints::{Constraint, DistanceContraint, Node2DPinContraint, PinC
 use crate::rope_engine::RopeEngine;
 use crate::rope_point::RopeParticle;
 use godot::engine::{
-    Area2D, Area2DVirtual, CircleShape2D, Line2D, PhysicsBody2D, PhysicsServer2D, ProjectSettings,
-    RigidBody2D, Shape2D, StaticBody2D,
+    Area2D, Area2DVirtual, CircleShape2D, Engine, Line2D, PhysicsBody2D, PhysicsServer2D,
+    ProjectSettings, RigidBody2D, Shape2D, StaticBody2D,
 };
 use godot::prelude::*;
 use std::cell::RefCell;
 use std::rc::Rc;
 
 #[derive(GodotClass)]
-#[class(base=Area2D)]
+#[class(tool, base=Area2D)]
 struct Rope2D {
     #[base]
     base: Base<Area2D>,
@@ -295,6 +295,8 @@ impl Area2DVirtual for Rope2D {
     }
 
     fn get_configuration_warnings(&self) -> PackedStringArray {
-        PackedStringArray::new()
+        let mut warnings = PackedStringArray::new();
+        warnings.push(GodotString::from("Hello"));
+        warnings
     }
 }
