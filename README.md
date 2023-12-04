@@ -1,7 +1,6 @@
 # Godot Verlet Rope
 
-![](https://github.com/GuilhermeGSousa/godot-verlet-rope/rope.gif)
-
+![](https://github.com/GuilhermeGSousa/godot-verlet-rope/blob/main/rope.gif)
 
 This repo implements a GDExtension that adds a **Rope2D** node, using Verlet Simulation implemented in Rust. **Rope2D** nodes support collisions with both static and rigid bodies.
 
